@@ -1,0 +1,6 @@
+django(version 4.2)
+django_rest_framework
+Simple JWT(for token authentication)
+
+->create your own authentication model and then register this model in to seting in order to use this model for default authentication model
+->
