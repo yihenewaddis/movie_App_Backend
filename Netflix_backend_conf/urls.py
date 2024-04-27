@@ -12,4 +12,4 @@ urlpatterns = [
     path('report/', include('report.urls')),
     path('auth/token/refresh/', RefreshTokenView.as_view(), name='token_refresh'),
 ]
-urlpatterns += [re_path(r'^.*',TemplateView.as_view(template_name = 'index.html'))]
+urlpatterns += [re_path(r'^.*',TemplateView.as_view(template_name = 'index.html'))] 

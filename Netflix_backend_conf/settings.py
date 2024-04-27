@@ -142,12 +142,19 @@ ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
     '192.168.43.26',
+    '192.168.137.101',
+    '10.42.0.74',
+    '192.168.137.200',
+    '192.168.43.171',
+    '10.161.123.163'
 ]
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
     'http://localhost:19006',
     'http://192.168.43.26',
     'exp://192.168.43.26:8081',
+    'http://10.161.123.163:8081',
+    'exp://10.161.123.163:8081',
     
 ]
 CORS_ORIGIN_ALLOW_ALL = True
@@ -159,8 +166,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'yihelgn@gmail.com'
-EMAIL_HOST_PASSWORD = 'zkebxpgxidmububt'
-'''this is another password->pxoyueakineecsad'''
+EMAIL_HOST_PASSWORD = 'awzv asms bmzk hgfs'
 EMAIL_USE_TLS = True
 
 DJOSER = {
@@ -200,7 +206,7 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 SIMPLE_JWT = {
-    "ACCESS_TOKEN_LIFETIME": datetime.timedelta(days=1),
-    "REFRESH_TOKEN_LIFETIME": datetime.timedelta(days=1),
+    "ACCESS_TOKEN_LIFETIME": datetime.timedelta(days=25),
+    "REFRESH_TOKEN_LIFETIME": datetime.timedelta(days=30),
     "AUTH_HEADER_TYPES": ("Bearer",),
     }
